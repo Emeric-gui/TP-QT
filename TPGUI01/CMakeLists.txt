@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.7)
+project(TPGUI01)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_AUTOMOC ON)
+find_package(Qt5Widgets CONFIG REQUIRED)
+add_executable(TPGUI01 exercice2.cpp main.cpp MyMainWindow.cpp exercice3.cpp exercice4.cpp Window.cpp Window.h WindowTest.cpp)
+target_link_libraries(TPGUI01 Qt5::Widgets)
